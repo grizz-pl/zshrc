@@ -29,7 +29,7 @@ compinit
 
 autoload -U promptinit
 promptinit
-prompt fire
+prompt elite2 red
 
 #zsh t'n't
 ################### KEYBINDINGS #################
@@ -124,6 +124,7 @@ alias pllu="ipoldek llu"
 alias pul="pu && pllu" #tricky :P                                         
 alias pud="poldek --upgrade-dist"
 alias pth="poldek -n th-test -n titanium -n titanium-test -n th -n th-ready"
+alias pula="pth && pul"
 ###########################PLDend##########################
 
 ######################SSHFS##################################
@@ -135,7 +136,7 @@ alias	Sshfsf='sshfs grizz@s.rootnode.net:/home2/grizz/www/firlej.org/htdocs /hom
 ##########################SSHFSend###########################
 
 export PAGER=less
-export EDITOR="gvim"
+export EDITOR="vim"
 alias e=$EDITOR
 
 export OOO_FORCE_DESKTOP="kde"

@@ -72,7 +72,7 @@ bindkey "^[[4~" end-of-line
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 alias t="sensors |grep Core"
-alias s="uptime && echo \"--\\n\" && free -m G buf && echo \"--\\n\" && t && echo \"--\\n\" && sensors G CPU && echo \"--\\n\" && /usr/sbin/hddtemp -q /dev/sda && /usr/sbin/hddtemp -q /dev/sdb
+alias s="uptime && echo \"--\\n\" && free -m && echo \"--\\n\" && t && echo \"--\\n\" && sensors G CPU && echo \"--\\n\" && /usr/sbin/hddtemp -q /dev/sda && /usr/sbin/hddtemp -q /dev/sdb
 "
 alias    -g    L='|most '
 alias    -g    G='|grep '

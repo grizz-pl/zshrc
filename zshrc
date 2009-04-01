@@ -118,6 +118,7 @@ alias DU="du -sh *"
 alias Sv="grep Version"
 alias Ss="grep Sum"
 alias Su="grep URL"
+alias SS="egrep 'Version|URL|Sum'"
 alias bb='time ./builder -bb'
 alias bbak='time ./builder -bb --define alt_kernel desktop'
 #######################PLDBUILDERend############################

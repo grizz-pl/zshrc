@@ -29,8 +29,13 @@ compinit
 
 autoload -U promptinit
 promptinit
-prompt elite2 red
-
+if [[ $( whoami ) == root ]]; then
+	prompt elite2 red
+elif [[ $( whoami ) == grizz ]]; then
+	prompt fire
+else
+	prompt fade white grey blue
+fi
 #zsh t'n't
 ################### KEYBINDINGS #################
 bindkey -e
@@ -85,8 +90,6 @@ alias du="du -h"
 alias DU="du -sh *"
 
 
-<<<<<<< HEAD:zshrc
-=======
 ### ARCH Linux START ###
 #
 #alias ags="fakeroot aur-get -S"
@@ -127,7 +130,6 @@ alias pud="poldek --upgrade-dist"
 alias pth="poldek -n th-test -n titanium -n titanium-test -n th -n th-ready"
 alias pula="pth && pul"
 ###########################PLDend##########################
->>>>>>> root:zshrc
 
 ######################SSHFS##################################
 alias	Sshfss='sshfs grizz@s.rootnode.net:/home/grizz/ /home/users/grizz/mnt/stallman'
@@ -140,5 +142,5 @@ alias	Sshfsf='sshfs grizz@s.rootnode.net:/home2/grizz/www/firlej.org/htdocs /hom
 export PAGER=less
 export EDITOR="vim"
 alias e=$EDITOR
-
+alias ee="gvim"
 export OOO_FORCE_DESKTOP="kde"

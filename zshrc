@@ -29,7 +29,7 @@ compinit
 
 autoload -U promptinit
 promptinit
-prompt fire
+prompt elite2 red
 
 #zsh t'n't
 ################### KEYBINDINGS #################
@@ -85,6 +85,49 @@ alias du="du -h"
 alias DU="du -sh *"
 
 
+<<<<<<< HEAD:zshrc
+=======
+### ARCH Linux START ###
+#
+#alias ags="fakeroot aur-get -S"
+#alias agn="fakeroot aur-get -Sn"
+#alias sfm="shell-fm"
+#
+#alias pcss="yaourt"
+#alias pcs="yaourt -S"
+#alias pcsb="yaourt -Sb"
+#alias pcsu="yaourt -Su"
+#alias pcsy="yaourt -Sy"
+#alias pcsyu="yaourt -Syu"
+#alias pcr="yaourt -R"
+#alias pcq="yaourt -Q"
+#alias pcqi="yaourt -Qi"
+#alias pcql="yaourt -Ql"
+#alias pcqo="yaourt -Qo"
+#alias pcqs="yaourt -Qs"
+#
+#alias pcu="yaourt -U"
+#
+### ARCH Linux END ###
+
+
+######################PLDBUILDER##############3
+alias Sv="grep Version"
+alias Ss="grep Sum"
+alias Su="grep URL"
+alias bb='time ./builder -bb'
+alias bbak='time ./builder -bb --define alt_kernel desktop'
+#######################PLDBUILDERend############################
+
+###########################PLD#############################
+alias pu="poldek --up"                                                    
+alias pllu="ipoldek llu"
+alias pul="pu && pllu" #tricky :P                                         
+alias pud="poldek --upgrade-dist"
+alias pth="poldek -n th-test -n titanium -n titanium-test -n th -n th-ready"
+alias pula="pth && pul"
+###########################PLDend##########################
+>>>>>>> root:zshrc
 
 ######################SSHFS##################################
 alias	Sshfss='sshfs grizz@s.rootnode.net:/home/grizz/ /home/users/grizz/mnt/stallman'
@@ -95,7 +138,7 @@ alias	Sshfsf='sshfs grizz@s.rootnode.net:/home2/grizz/www/firlej.org/htdocs /hom
 ##########################SSHFSend###########################
 
 export PAGER=less
-export EDITOR="gvim"
+export EDITOR="vim"
 alias e=$EDITOR
 
 export OOO_FORCE_DESKTOP="kde"

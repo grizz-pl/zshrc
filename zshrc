@@ -135,8 +135,7 @@ alias pula="pth && pul"
 alias	Sshfss='sshfs grizz@s.rootnode.net:/home/grizz/ /home/users/grizz/mnt/stallman'
 alias	Sshfsm='sshfs mirley@192.168.1.2:/home/mirley/ /home/users/grizz/mnt/mirley'
 alias 	Sshfsr='sshfs grizz@s.rootnode.net:/home2/grizz/www/grizz.rootnode.net/htdocs /home/users/grizz/mnt/grizz.rootnode.net'
-alias	Sshfsg='sshfs grizz@s.rootnode.net:/home2/grizz/www/grizz.pl/htdocs /home/users/grizz/mnt/grizz.pl'
-alias	Sshfsf='sshfs grizz@s.rootnode.net:/home2/grizz/www/firlej.org/htdocs /home/users/grizz/mnt/firlej.org'
+alias	Sshfsw='sshfs grizz@s.rootnode.net:/home2/grizz/www/ /home/users/grizz/mnt/www'
 ##########################SSHFSend###########################
 
 export PAGER=less

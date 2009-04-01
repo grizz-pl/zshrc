@@ -129,7 +129,7 @@ alias pllu="ipoldek llu"
 alias pul="pu && pllu" #tricky :P                                         
 alias pud="poldek --upgrade-dist"
 alias pth="poldek -n th-test -n titanium -n titanium-test -n th -n th-ready"
-alias pula="pth && pul"
+alias pula="pth --up && pul && pth --shcmd 'llu kde* gtk2-theme-engine-*'"
 ###########################PLDend##########################
 
 ######################SSHFS##################################

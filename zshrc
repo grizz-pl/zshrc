@@ -88,7 +88,7 @@ alias aria2cSl="aria2c -s 5 --max-download-limit=200K"
 alias aria2cS="aria2c -s 5"
 alias du="du -h"
 alias DU="du -sh *"
-
+alias sc="screen -x"
 
 ### ARCH Linux START ###
 #

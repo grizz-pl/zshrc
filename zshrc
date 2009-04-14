@@ -29,7 +29,11 @@ compinit
 
 autoload -U promptinit
 promptinit
-if [[ $( whoami ) == root ]]; then
+if [[ $( hostname ) == stallman.rootnode.net ]]; then
+	prompt fire green green green
+elif [[ $( hostname ) == pld-users.org ]]; then
+	prompt fire red grey red
+elif [[ $( whoami ) == root ]]; then
 	prompt elite2 red
 elif [[ $( whoami ) == grizz ]]; then
 	prompt fire

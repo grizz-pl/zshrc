@@ -31,6 +31,8 @@ autoload -U promptinit
 promptinit
 if [[ $( hostname ) == stallman.rootnode.net ]]; then
 	prompt fire green green green
+	[ ! -f "$HOME/.nosplash" ] && /usr/local/bin/splash
+	[ ! -f "$HOME/.nomotd" ] && cat /etc/motd.rootnode
 elif [[ $( hostname ) == pld-users.org ]]; then
 	prompt fire red grey red
 elif [[ $( whoami ) == root ]]; then

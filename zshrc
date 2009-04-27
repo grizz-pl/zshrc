@@ -127,6 +127,7 @@ alias Su="grep URL"
 alias SS="egrep 'Version|URL|Sum'"
 alias bb='time ./builder -bb'
 alias bbak='time ./builder -bb --define alt_kernel desktop'
+alias Sup="cd /opt/builder64/home/users/builder/rpm/SPECS && cvs up"
 #######################PLDBUILDERend############################
 
 ###########################PLD#############################

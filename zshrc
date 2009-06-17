@@ -125,6 +125,7 @@ alias Sv="grep Version"
 alias Ss="grep Sum"
 alias Su="grep URL"
 alias SS="egrep 'Version|URL|Sum'"
+alias Sl="grep -A 10 Log"
 alias bb='time ./builder -bb'
 alias bbak='time ./builder -bb --define alt_kernel desktop'
 alias Sup="cd /opt/builder64/home/users/builder/rpm/SPECS && cvs up"

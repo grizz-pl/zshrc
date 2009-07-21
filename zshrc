@@ -29,7 +29,7 @@ compinit
 
 autoload -U promptinit
 promptinit
-if [[ $( hostname ) == stallman.rootnode.net ]]; then
+if [[ $( hostname ) == stallman ]]; then
 	prompt fire green green green
 	[ ! -f "$HOME/.nosplash" ] && /usr/local/bin/splash
 	[ ! -f "$HOME/.nomotd" ] && cat /etc/motd.rootnode

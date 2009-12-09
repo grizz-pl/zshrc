@@ -84,7 +84,7 @@ alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 alias la='ll -A'
 alias t="sensors |grep Core"
-alias s="uptime && echo \"--\\n\" && free -m && echo \"--\\n\" && t && echo \"--\\n\" && sensors G CPU && echo \"--\\n\" && /usr/sbin/hddtemp -q /dev/sda && /usr/sbin/hddtemp -q /dev/sdb
+alias s="uptime && echo \"--\\n\" && free -m && echo \"--\\n\" && t && grep \"cpu MHz\" /proc/cpuinfo && cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor && echo \"--\\n\" && sensors G CPU && echo \"--\\n\" && /usr/sbin/hddtemp -q /dev/sda && /usr/sbin/hddtemp -q /dev/sdb
 "
 alias    -g    L='|most '
 alias    -g    G='|grep '

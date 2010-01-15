@@ -93,7 +93,7 @@ alias rm="rm -I"
 alias w="w -f"
 alias aria2cSl="aria2c -s 5 --max-download-limit=200K"
 alias aria2cS="aria2c -s 5"
-alias du="du -h"
+alias du="du -h --max-depth=1"
 alias DU="du -sh *"
 alias sc="screen -x"
 

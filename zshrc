@@ -67,7 +67,7 @@ PR_RESET="%{${reset_color}%}";
 # %a - action (e.g. rebase-i)
 # %R - repository path
 # %S - path in the repository
-FMT_BRANCH="${PR_GREEN}%b%u%c${PR_RESET}" # e.g. master¹²
+FMT_BRANCH="${PR_GREEN}%s::%b%u%c${PR_RESET}" # e.g. master¹²
 FMT_ACTION="(${PR_CYAN}%a${PR_RESET}%)"   # e.g. (rebase-i)
 FMT_PATH="%R${PR_YELLOW}/%S"              # e.g. ~/repo/subdir
 
@@ -104,7 +104,7 @@ function rprompt {
 	RPROMPT="${PR_RESET}${bracket_open}${inner}${git}${bracket_close}${PR_RESET}"
 }
 
-rprompt '()' $BR_BRIGHT_BLACK $PR_WHITE
+rprompt '  ' $BR_BRIGHT_BLACK $PR_WHITE
 
 
 #zsh t'n't

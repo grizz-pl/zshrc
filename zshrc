@@ -35,8 +35,6 @@ if [[ $( hostname ) == stallman ]]; then
 	[ ! -f "$HOME/.nomotd" ] && cat /etc/motd.rootnode
 elif [[ $( hostname ) == stallman2.rootnode.net ]]; then
 	prompt fire green red green
-	[ ! -f "$HOME/.nosplash" ] && /usr/local/bin/splash
-	[ ! -f "$HOME/.nomotd" ] && cat /etc/motd.rootnode
 elif [[ $( hostname ) == pld-users.org ]]; then
 	prompt fire red grey red
 elif [[ $( whoami ) == root ]]; then

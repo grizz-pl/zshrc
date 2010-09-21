@@ -33,10 +33,8 @@ if [[ $( hostname ) == stallman ]]; then
 	prompt fire green green green
 	[ ! -f "$HOME/.nosplash" ] && /usr/local/bin/splash
 	[ ! -f "$HOME/.nomotd" ] && cat /etc/motd.rootnode
-elif [[ $( hostname ) == stallman2 ]]; then
+elif [[ $( hostname ) == stallman2.rootnode.net ]]; then
 	prompt fire green red green
-	[ ! -f "$HOME/.nosplash" ] && /usr/local/bin/splash
-	[ ! -f "$HOME/.nomotd" ] && cat /etc/motd.rootnode
 elif [[ $( hostname ) == pld-users.org ]]; then
 	prompt fire red grey red
 elif [[ $( whoami ) == root ]]; then
@@ -202,12 +200,11 @@ alias bbak='time ./builder -bb --define alt_kernel desktop'
 
 ###########################PLD#############################
 alias pu="poldek --up"                                                    
-alias pth="poldek -n th-test -n ti -n ti-test -n th -n th-ready"
-alias pti="poldek -n ti -n ti-test"
-alias ptid="poldek -n ti-dev -n ti-dev-test"
-alias ptia="poldek -n ti -n ti-test -n ti-dev -n ti-dev-test"
-alias pul="poldek -n ti -n ti-test --up; ipoldek -n ti llu; ipoldek -n ti-test llu"
-alias pula="poldek -n ti -n ti-test -n ti-dev -n ti-dev-test --up; ipoldek -n ti llu; ipoldek -n ti-test llu; ipoldek -n ti-dev llu; ipoldek -n ti-dev-test llu"
+alias pllu="ipoldek llu"
+alias pul="pu && pllu" #tricky :P                                         
+alias pud="poldek --upgrade-dist"
+alias pth="poldek -n th-test -n titanium -n titanium-test -n th -n th-ready"
+alias pula="pth --up && pul && pth --shcmd 'llu kde* gtk2-theme-engine-* Qt* qt* texlive* chromium*'"
 ###########################PLDend##########################
 
 ######################SSHFS##################################

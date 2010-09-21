@@ -196,7 +196,7 @@ alias Ss="grep Sum"
 alias Su="grep URL"
 alias SS="egrep 'Version|URL|Sum'"
 alias Sl="grep -A 10 Log"
-alias bb='time ./builder -bb'
+alias bb='time ./builder -bb -bc'
 alias bbak='time ./builder -bb --define alt_kernel desktop'
 #######################PLDBUILDERend############################
 

@@ -33,7 +33,7 @@ if [[ $( hostname ) == stallman ]]; then
 	prompt fire green green green
 	[ ! -f "$HOME/.nosplash" ] && /usr/local/bin/splash
 	[ ! -f "$HOME/.nomotd" ] && cat /etc/motd.rootnode
-elif [[ $( hostname ) == stallman2 ]]; then
+elif [[ $( hostname ) == stallman2.rootnode.net]]; then
 	prompt fire green red green
 	[ ! -f "$HOME/.nosplash" ] && /usr/local/bin/splash
 	[ ! -f "$HOME/.nomotd" ] && cat /etc/motd.rootnode

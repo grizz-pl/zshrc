@@ -211,7 +211,7 @@ alias pula="poldek -n ti -n ti-test -n ti-dev -n ti-dev-test --up; ipoldek -n ti
 ###########################PLDend##########################
 
 ######################SSHFS##################################
-alias	Sshfss='sshfs grizz@s.rootnode.net:/home/grizz/ /home/users/grizz/mnt/stallman'
+alias	Sshfss='sshfs grizz@s2.rootnode.net:/home/grizz/ /home/users/grizz/mnt/stallman'
 alias	Sshfsm='sshfs mirley@192.168.1.2:/home/mirley/ /home/users/grizz/mnt/mirley'
 alias 	Sshfsr='sshfs grizz@s.rootnode.net:/home2/grizz/www/grizz.rootnode.net/htdocs /home/users/grizz/mnt/grizz.rootnode.net'
 alias	Sshfsw='sshfs grizz@s.rootnode.net:/home2/grizz/www/ /home/users/grizz/mnt/www'

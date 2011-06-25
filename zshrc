@@ -165,6 +165,8 @@ alias aria2cS="aria2c -s 5"
 alias du="du -h --max-depth=1"
 alias DU="du -h --max-depth=0 *"
 alias sc="screen -x"
+alias sci=" ssh s2.rootnode.net -t 'screen -x i'"
+alias sce=" ssh s2.rootnode.net -t 'screen -x e'"
 
 ### ARCH Linux START ###
 #

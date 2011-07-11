@@ -221,6 +221,6 @@ alias	Sshfsw='sshfs grizz@s.rootnode.net:/home2/grizz/www/ /home/users/grizz/mnt
 export PAGER=less
 export EDITOR="vim"
 alias e=$EDITOR
-alias ee="gvim"
+alias ee="kwrite"
 export OOO_FORCE_DESKTOP="kde"
 

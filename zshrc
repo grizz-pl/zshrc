@@ -202,20 +202,17 @@ alias bbak='time ./builder -bb --define alt_kernel desktop'
 #######################PLDBUILDERend############################
 
 ###########################PLD#############################
-alias pu="poldek --up"                                                    
-alias pth="poldek -n th-test -n ti -n ti-test -n th -n th-ready"
-alias pti="poldek -n ti -n ti-test"
-alias ptid="poldek -n ti-dev -n ti-dev-test"
-alias ptia="poldek -n ti -n ti-test -n ti-dev -n ti-dev-test"
-alias pul="poldek -n ti -n ti-test --up; ipoldek -n ti llu; ipoldek -n ti-test llu"
-alias pula="poldek -n ti -n ti-test -n ti-dev -n ti-dev-test --up; ipoldek -n ti llu; ipoldek -n ti-test llu; ipoldek -n ti-dev llu; ipoldek -n ti-dev-test llu"
+#alias pu="poldek --up"                                                    
+#alias pth="poldek -n th-test -n ti -n ti-test -n th -n th-ready"
+#alias pti="poldek -n ti -n ti-test"
+#alias ptid="poldek -n ti-dev -n ti-dev-test"
+#alias ptia="poldek -n ti -n ti-test -n ti-dev -n ti-dev-test"
+#alias pul="poldek -n ti -n ti-test --up; ipoldek -n ti llu; ipoldek -n ti-test llu"
+#alias pula="poldek -n ti -n ti-test -n ti-dev -n ti-dev-test --up; ipoldek -n ti llu; ipoldek -n ti-test llu; ipoldek -n ti-dev llu; ipoldek -n ti-dev-test llu"
 ###########################PLDend##########################
 
 ######################SSHFS##################################
-alias	Sshfss='sshfs grizz@s2.rootnode.net:/home/grizz/ /home/users/grizz/mnt/stallman'
-alias	Sshfsm='sshfs mirley@192.168.1.2:/home/mirley/ /home/users/grizz/mnt/mirley'
-alias 	Sshfsr='sshfs grizz@s.rootnode.net:/home2/grizz/www/grizz.rootnode.net/htdocs /home/users/grizz/mnt/grizz.rootnode.net'
-alias	Sshfsw='sshfs grizz@s.rootnode.net:/home2/grizz/www/ /home/users/grizz/mnt/www'
+alias	Sshfss='sshfs grizz@s2.rootnode.net:/home/grizz/ /home/grizz/mnt/stallman'
 ##########################SSHFSend###########################
 
 export PAGER=less

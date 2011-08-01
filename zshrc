@@ -221,3 +221,8 @@ alias e=$EDITOR
 alias ee="kwrite"
 export OOO_FORCE_DESKTOP="kde"
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+	    PATH="$HOME/bin:$PATH"
+fi
+

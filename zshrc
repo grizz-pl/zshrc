@@ -148,8 +148,8 @@ bindkey "^[[1~" beginning-of-line
 bindkey "^[[4~" end-of-line
 
 # up/down work as pgUp pgDown in Xterm - 
-bindkey "^[[A" history-search-backward
-bindkey "^[[B" history-search-forward
+#bindkey "^[[A" history-search-backward
+#bindkey "^[[B" history-search-forward
 
 ############## aliases ##################
 
